@@ -18028,7 +18028,7 @@ body.boxed-wrapper .main-slider-one__shape img {
 }
 /*# sourceMappingURL=bultax.css.map */
 .main-header__inner img {
-  width: 150px;
+  width: 120px;
 }
 .main-footer__bottom {
   border-bottom: 15px solid #077d4b;
@@ -18178,7 +18178,6 @@ body.boxed-wrapper .main-slider-one__shape img {
   .main-footer__copyright {
     line-height: 25px;
     text-align: center;
-
   }
 
   .main-footer__bottom__links li {
