@@ -3244,6 +3244,7 @@ p {
   background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px
     95%/0px 1px no-repeat;
   transition: all 500ms ease;
+  padding-left: 10px;
 }
 .footer-widget--links-two li > a:hover {
   background-size: 100% 1px;
@@ -18176,10 +18177,10 @@ body.boxed-wrapper .main-slider-one__shape img {
   }
   .main-footer__copyright {
     line-height: 25px;
+    text-align: center;
+
   }
-  .main-footer__bottom__links {
-    display: inline-block;
-  }
+
   .main-footer__bottom__links li {
     margin-bottom: 10px;
   }
