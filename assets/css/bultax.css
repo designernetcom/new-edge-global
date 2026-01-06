@@ -18214,3 +18214,6 @@ body.boxed-wrapper .main-slider-one__shape img {
     max-height: 240px;      /* Reduce height on mobile */
   }
 }
+.service-one .owl-carousel .owl-item img {
+  width: 100%;
+}
