@@ -139,10 +139,10 @@
         if (!$t.hasClass("counted")) {
           $t.addClass("counted");
           $({
-            countNum: $t.find(".count-text").text()
+            countNum: $t.find(".count-text").text(),
           }).animate(
             {
-              countNum: n
+              countNum: n,
             },
             {
               duration: r,
@@ -152,13 +152,13 @@
               },
               complete: function () {
                 $t.find(".count-text").text(this.countNum);
-              }
+              },
             }
           );
         }
       },
       {
-        accY: 0
+        accY: 0,
       }
     );
   }
@@ -207,18 +207,18 @@
       // initialize the plugin
       rules: {
         name: {
-          required: true
+          required: true,
         },
         email: {
           required: true,
-          email: true
+          email: true,
         },
         message: {
-          required: true
+          required: true,
         },
         subject: {
-          required: true
-        }
+          required: true,
+        },
       },
       submitHandler: function (form) {
         // sending value with ajax request
@@ -233,7 +233,7 @@
           }
         );
         return false;
-      }
+      },
     });
   }
 
@@ -267,7 +267,7 @@
 
             mcResp.find("p").fadeOut(10000);
           }
-        }
+        },
       });
     });
   }
@@ -279,7 +279,7 @@
       removalDelay: 160,
       preloader: true,
 
-      fixedContentPos: false
+      fixedContentPos: false,
     });
   }
 
@@ -301,8 +301,8 @@
         closeOnContentClick: true,
         closeBtnInside: false,
         gallery: {
-          enabled: true
-        }
+          enabled: true,
+        },
       });
     });
   }
@@ -423,7 +423,7 @@
       boxClass: "wow",
       animateClass: "animated",
       mobile: true,
-      live: true
+      live: true,
     });
     wow.init();
   }
@@ -618,7 +618,7 @@
           .stop()
           .animate(
             {
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px",
             },
             900,
             "easeInOutExpo"
@@ -699,7 +699,7 @@
         slide: function (event, ui) {
           $(".price-ranger .ranger-min-max-block .min").val("$" + ui.values[0]);
           $(".price-ranger .ranger-min-max-block .max").val("$" + ui.values[1]);
-        }
+        },
       });
       $(".price-ranger .ranger-min-max-block .min").val(
         "$" + $(".price-ranger #slider-range").slider("values", 0)
@@ -745,7 +745,7 @@
     function scrollToTop() {
       document.documentElement.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
 
@@ -775,14 +775,14 @@
     if ($(".masonry-layout").length) {
       $(".masonry-layout").imagesLoaded(function () {
         $(".masonry-layout").isotope({
-          layoutMode: "masonry"
+          layoutMode: "masonry",
         });
       });
     }
     if ($(".fitRow-layout").length) {
       $(".fitRow-layout").imagesLoaded(function () {
         $(".fitRow-layout").isotope({
-          layoutMode: "fitRows"
+          layoutMode: "fitRows",
         });
       });
     }
@@ -794,8 +794,8 @@
         animationOptions: {
           duration: 500,
           easing: "linear",
-          queue: false
-        }
+          queue: false,
+        },
       });
       postFilterList.on("click", function () {
         var Self = $(this);
@@ -808,8 +808,8 @@
           animationOptions: {
             duration: 500,
             easing: "linear",
-            queue: false
-          }
+            queue: false,
+          },
         });
         return false;
       });
@@ -821,7 +821,7 @@
       $(".filter-layout").isotope({
         itemSelector: ".project-card",
         layoutMode: "fitRows",
-        filter: "*"
+        filter: "*",
       });
 
       postFilterList.on("click", function () {
@@ -832,7 +832,7 @@
         Self.addClass("active");
 
         $(".filter-layout").isotope({
-          filter: selector
+          filter: selector,
         });
       });
     }
