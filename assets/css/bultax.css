@@ -391,8 +391,6 @@
   font-family: var(--bultax-font, "Roboto", sans-serif);
 
   color: #11804f;
-
-
 }
 @media (max-width: 575px) {
   .sec-title__tagline {
@@ -560,8 +558,8 @@ p {
 }
 
 .section-space-top {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 
   padding-top: 120px;
 }
@@ -3773,7 +3771,7 @@ p {
   margin-bottom: 12px;
   display: block;
   transition: all 0.4s ease-in-out;
-      margin-top: 10px;
+  margin-top: 10px;
 }
 @media (max-width: 475px) {
   .contact-one__call__title {
@@ -3791,8 +3789,7 @@ p {
   position: relative;
   z-index: 1;
   overflow: hidden;
-      text-align: center;
-
+  text-align: center;
 }
 @media (max-width: 991px) {
   .contact-one__call__item {
@@ -3844,7 +3841,7 @@ p {
 }
 .contact-one__call__item .icon i {
   display: block;
-      margin-top: 20px;
+  margin-top: 20px;
 }
 .contact-one__call__item .icon::after {
   content: "";
@@ -5069,9 +5066,6 @@ p {
   /* padding-top: 48px;
   padding-bottom: 48px; */
 
-  padding-top: 48px;
-  padding-bottom: 48px;
-
   position: relative;
 }
 .main-menu .main-menu__list > li.dropdown > a {
@@ -5085,7 +5079,7 @@ p {
   line-height: 1;
 }
 .main-menu .main-menu__list > li + li {
-  margin-left: 35px;
+  margin-left: 50px;
 }
 @media (max-width: 1400px) {
   .main-menu .main-menu__list > li + li {
@@ -13685,8 +13679,6 @@ body.megamenu-popup-active .mobile-nav__content {
   height: 206px;
 
   background-color: #107e53;
-
-  background-color: var(--bultax-base, #ff5a1e);
 }
 @media (max-width: 575px) {
   .about-one__thumb::after {
@@ -13731,8 +13723,6 @@ body.megamenu-popup-active .mobile-nav__content {
 
   background-color: #107e53;
 
-  background-color: var(--bultax-base, #ff5a1e);
-
   position: relative;
   z-index: 1;
 }
@@ -13762,8 +13752,6 @@ body.megamenu-popup-active .mobile-nav__content {
   right: -16px;
 
   background-color: #107e53;
-
-  background-color: var(--bultax-base, #ff5a1e);
 }
 @media (max-width: 425px) {
   .about-one__thumb__funfact__count::after {
@@ -14290,7 +14278,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-two__feature__icon {
   max-width: 70px;
   width: 100%;
-  background-color: var(--bultax-base, #ff5a1e);
+
   height: 70px;
   display: flex;
   align-items: center;
@@ -18374,4 +18362,7 @@ body.boxed-wrapper .main-slider-one__shape img {
 
 .service-one .owl-stage {
   display: flex;
+}
+.about-two__feature__icon img {
+  width: 50px;
 }
