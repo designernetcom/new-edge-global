@@ -139,10 +139,17 @@
         if (!$t.hasClass("counted")) {
           $t.addClass("counted");
           $({
+<<<<<<< HEAD
             countNum: $t.find(".count-text").text(),
           }).animate(
             {
               countNum: n,
+=======
+            countNum: $t.find(".count-text").text()
+          }).animate(
+            {
+              countNum: n
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
             },
             {
               duration: r,
@@ -152,13 +159,21 @@
               },
               complete: function () {
                 $t.find(".count-text").text(this.countNum);
+<<<<<<< HEAD
               },
+=======
+              }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
             }
           );
         }
       },
       {
+<<<<<<< HEAD
         accY: 0,
+=======
+        accY: 0
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       }
     );
   }
@@ -207,6 +222,7 @@
       // initialize the plugin
       rules: {
         name: {
+<<<<<<< HEAD
           required: true,
         },
         email: {
@@ -219,6 +235,20 @@
         subject: {
           required: true,
         },
+=======
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true
+        },
+        subject: {
+          required: true
+        }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       },
       submitHandler: function (form) {
         // sending value with ajax request
@@ -233,7 +263,11 @@
           }
         );
         return false;
+<<<<<<< HEAD
       },
+=======
+      }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
     });
   }
 
@@ -267,7 +301,11 @@
 
             mcResp.find("p").fadeOut(10000);
           }
+<<<<<<< HEAD
         },
+=======
+        }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       });
     });
   }
@@ -279,7 +317,11 @@
       removalDelay: 160,
       preloader: true,
 
+<<<<<<< HEAD
       fixedContentPos: false,
+=======
+      fixedContentPos: false
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
     });
   }
 
@@ -301,8 +343,13 @@
         closeOnContentClick: true,
         closeBtnInside: false,
         gallery: {
+<<<<<<< HEAD
           enabled: true,
         },
+=======
+          enabled: true
+        }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       });
     });
   }
@@ -423,7 +470,11 @@
       boxClass: "wow",
       animateClass: "animated",
       mobile: true,
+<<<<<<< HEAD
       live: true,
+=======
+      live: true
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
     });
     wow.init();
   }
@@ -618,7 +669,11 @@
           .stop()
           .animate(
             {
+<<<<<<< HEAD
               scrollTop: $(target.attr("href")).offset().top - headerH + "px",
+=======
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
             },
             900,
             "easeInOutExpo"
@@ -699,7 +754,11 @@
         slide: function (event, ui) {
           $(".price-ranger .ranger-min-max-block .min").val("$" + ui.values[0]);
           $(".price-ranger .ranger-min-max-block .max").val("$" + ui.values[1]);
+<<<<<<< HEAD
         },
+=======
+        }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       });
       $(".price-ranger .ranger-min-max-block .min").val(
         "$" + $(".price-ranger #slider-range").slider("values", 0)
@@ -745,7 +804,11 @@
     function scrollToTop() {
       document.documentElement.scrollTo({
         top: 0,
+<<<<<<< HEAD
         behavior: "smooth",
+=======
+        behavior: "smooth"
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       });
     }
 
@@ -775,14 +838,22 @@
     if ($(".masonry-layout").length) {
       $(".masonry-layout").imagesLoaded(function () {
         $(".masonry-layout").isotope({
+<<<<<<< HEAD
           layoutMode: "masonry",
+=======
+          layoutMode: "masonry"
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
         });
       });
     }
     if ($(".fitRow-layout").length) {
       $(".fitRow-layout").imagesLoaded(function () {
         $(".fitRow-layout").isotope({
+<<<<<<< HEAD
           layoutMode: "fitRows",
+=======
+          layoutMode: "fitRows"
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
         });
       });
     }
@@ -794,8 +865,13 @@
         animationOptions: {
           duration: 500,
           easing: "linear",
+<<<<<<< HEAD
           queue: false,
         },
+=======
+          queue: false
+        }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       });
       postFilterList.on("click", function () {
         var Self = $(this);
@@ -808,8 +884,13 @@
           animationOptions: {
             duration: 500,
             easing: "linear",
+<<<<<<< HEAD
             queue: false,
           },
+=======
+            queue: false
+          }
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
         });
         return false;
       });
@@ -821,7 +902,11 @@
       $(".filter-layout").isotope({
         itemSelector: ".project-card",
         layoutMode: "fitRows",
+<<<<<<< HEAD
         filter: "*",
+=======
+        filter: "*"
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
       });
 
       postFilterList.on("click", function () {
@@ -832,7 +917,11 @@
         Self.addClass("active");
 
         $(".filter-layout").isotope({
+<<<<<<< HEAD
           filter: selector,
+=======
+          filter: selector
+>>>>>>> f40664c80891ac921f16cd4380f437d29a32e839
         });
       });
     }
